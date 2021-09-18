@@ -1,5 +1,8 @@
 'use strict';
 import * as $ from 'jquery';
+import './select2.min';
+import './jquery.inputmask.min';
+
 
 const mobileWidth = 767;
 let isMobile = checkWidth();
@@ -40,6 +43,38 @@ window.addEventListener('load', function () {
             loader.parentElement.removeChild(loader);
         }, 1500);
 
+    })();
+
+    (function select() {
+        if($('.select').length > 1) {
+            $('select').each(function() {
+                let $this = $(this).not('.select-search');
+                let parent = $(this).not('.select-search').parents('.select');
+                $this.select2({
+                    minimumResultsForSearch: Infinity,
+                    dropdownParent: parent
+                });
+            });
+            $('.select-search').each(function() {
+                let $this = $(this);
+                let parent = $(this).parents('.select');
+                $this.select2({
+                    dropdownParent: parent
+                });
+            });
+        } else {
+            $('select').select2({
+                minimumResultsForSearch: Infinity,
+                dropdownParent: $('.select')
+            });
+        }
+    })();
+
+    (function inputMask() {
+        $(".phone-mask").inputmask({
+            mask:"+7(999)999-99-99",
+            "clearIncomplete": true
+        });
     })();
 
 });
