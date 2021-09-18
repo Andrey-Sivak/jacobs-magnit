@@ -484,7 +484,7 @@ body {
 
       @include response-to(medium) {
 
-        & img {
+        & video {
           width: 100vw;
           height: auto;
         }

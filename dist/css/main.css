@@ -1034,7 +1034,7 @@ body:after {
           -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
       @media (max-width: 992px) {
-        .main .video-video img {
+        .main .video-video video {
           width: 100vw;
           height: auto; } }
   .main .winners {
