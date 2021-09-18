@@ -88,7 +88,7 @@ body {
       top: 0;
       z-index: 1;
 
-      @media(max-width: 1880px) {
+      @media(max-width: 1700px) {
         right: -100px;
       }
 
@@ -102,7 +102,7 @@ body {
       left: -6%;
       z-index: 2;
 
-      @media(max-width: 1880px) {
+      @media(max-width: 1700px) {
         left: -21%;
       }
 
@@ -279,6 +279,26 @@ body {
   padding-top: 85px;
   background-repeat: no-repeat;
 
+  .rules-link {
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 23px;
+    line-height: 27px;
+    padding: 3px 21px;
+    background-image: url('../img/rules-bg.svg');
+    background-size: cover;
+    background-position: center;
+
+    @include on-event {
+      text-decoration: none;
+    }
+  }
+
   .process {
     max-width: 1116px;
     width: 100%;
@@ -291,6 +311,7 @@ body {
 
     @include response-to(medium) {
       flex-direction: column;
+      align-items: center;
       max-width: 288px;
       width: 100%;
       margin-left: auto;
@@ -319,7 +340,7 @@ body {
       left: 33.33%;
 
       @include response-to(medium) {
-        top: 251px;
+        top: 291px;
         left: 50%;
       }
     }
@@ -329,9 +350,25 @@ body {
 
       @include response-to(medium) {
         top: unset;
-        bottom: 231px;
+        bottom: 275px;
         right: unset;
         left: 50%;
+      }
+    }
+
+    &__decor {
+      display: none;
+
+      @include response-to(medium) {
+        display: block;
+
+        &.top {
+          margin-bottom: 20px;
+        }
+
+        &.bottom {
+          margin-top: 30px;
+        }
       }
     }
 
@@ -596,9 +633,7 @@ body {
           background: #fff;
           box-shadow: 2px 2px 2px rgba(104, 39, 0, 0.35);
           border: transparent;
-          border-radius: 0;
-          border-bottom-left-radius: 25px;
-          border-bottom-right-radius: 25px;
+          border-radius: 25px;
           overflow: hidden;
           z-index: 2;
         }
@@ -702,6 +737,9 @@ body {
         display: flex;
         width: 100%;
         padding: 20px 0;
+        background-image: url('../img/winners-border-bottom.svg');
+        background-repeat: repeat-x;
+        background-position: left bottom;
 
         @include response-to(medium) {
           flex-wrap: wrap;
@@ -742,9 +780,25 @@ body {
         font-size: 20px;
         padding-right: 88px;
         line-height: 25px;
+        background-image: unset;
 
         @include response-to(medium) {
           padding-right: 0;
+
+          .number {
+            display: none;
+          }
+        }
+
+        .date {
+
+          span {
+            display: none;
+
+            @include response-to(medium) {
+              display: inline;
+            }
+          }
         }
       }
 
@@ -813,6 +867,12 @@ body {
     margin-right: auto;
     padding-bottom: 30px;
     font-family: 'Myriad Pro', sans-serif;
+
+    @include response-to(medium) {
+      margin-top: 60px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 
     &__text {
       color: #D4944E;
