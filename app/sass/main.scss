@@ -70,6 +70,24 @@ body {
   }
 }
 
+.logo {
+
+  &-wrap {
+    top: 32px;
+    z-index: 1001;
+    max-width: 1200px;
+    width: 100%;
+    text-align: right;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include response-to(medium) {
+      max-width: unset;
+      width: fit-content;
+    }
+  }
+}
+
 .header {
   padding-top: 65px;
   padding-bottom: 104px;
@@ -248,11 +266,6 @@ body {
       bottom: -35px;
       left: 185px;
     }
-  }
-
-  &__logo {
-    top: -40px;
-    right: -70px;
   }
 
 
