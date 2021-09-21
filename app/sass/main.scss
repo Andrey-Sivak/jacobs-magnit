@@ -27,47 +27,6 @@ html {
 
 body {
 
-  &:before,
-  &:after {
-    position: absolute;
-    content: '';
-    z-index: 1000;
-    top: 0;
-    bottom: 0;
-    width: 733px;
-
-    @media(max-width: 1880px) {
-      width: 617px;
-    }
-
-    @include response-to(huge) {
-      content: unset;
-    }
-  }
-
-  &:before {
-    left: -395px;
-    background: linear-gradient(90deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%),
-                linear-gradient(90deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%),
-                linear-gradient(90deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%);
-
-    @media(max-width: 1880px) {
-      left: -282px;
-    }
-  }
-
-  &:after {
-    right: -395px;
-    background: linear-gradient(270deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%),
-                linear-gradient(270deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%),
-                linear-gradient(270deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%),
-                linear-gradient(270deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%),
-                linear-gradient(270deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%);
-
-    @media(max-width: 1880px) {
-      right: -282px;
-    }
-  }
 }
 
 .logo {
@@ -81,9 +40,21 @@ body {
     left: 50%;
     transform: translateX(-50%);
 
+    @include response-to(huge) {
+      max-width: 1100px;
+    }
+
     @include response-to(medium) {
       max-width: unset;
       width: fit-content;
+    }
+
+    & img {
+
+      @include response-to(huge) {
+        width: 154px;
+        height: auto;
+      }
     }
   }
 }
@@ -92,11 +63,55 @@ body {
   padding-top: 65px;
   padding-bottom: 104px;
 
+  @include response-to(huge) {
+    padding-top: 45px;
+  }
+
   @include response-to(medium) {
     background-image: url('../img/header-bg-left.png');
     background-size: cover;
     padding-top: 104px;
     padding-bottom: 184px;
+  }
+
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+    z-index: 4;
+    top: 0;
+    bottom: 0;
+    width: 733px;
+
+    @media(max-width: 1880px) {
+      width: 617px;
+    }
+
+    @media(max-width: 1200px) {
+      content: unset;
+    }
+  }
+
+  &:before {
+    left: -395px;
+    background: linear-gradient(90deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(90deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(90deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%);
+
+    @media(max-width: 1880px) {
+      left: -282px;
+    }
+  }
+
+  &:after {
+    right: -395px;
+    background: linear-gradient(270deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(270deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(270deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%);
+
+    @media(max-width: 1880px) {
+      right: -282px;
+    }
   }
 
   &__bg {
@@ -108,6 +123,13 @@ body {
 
       @media(max-width: 1700px) {
         right: -100px;
+      }
+
+      @include response-to(huge) {
+        width: 664px;
+        height: auto;
+        right: -12px;
+        top: -10px;
       }
 
       @include response-to(medium) {
@@ -125,7 +147,7 @@ body {
       }
 
       @include response-to(huge) {
-        left: -28%;
+        left: -18%;
       }
 
       @include response-to(medium) {
@@ -139,12 +161,38 @@ body {
     width: 100%;
     margin: 0 auto;
     padding-right: 104px;
-    z-index: 3;
+    z-index: 5;
+
+    @include response-to(huge) {
+      max-width: 1042px;
+    }
 
     @include response-to(medium) {
       padding-right: 0;
       display: flex;
       flex-direction: column;
+    }
+  }
+
+  &__bonus {
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(#fff, .5);
+    display: none;
+    bottom: 105px;
+    left: 398px;
+
+    @include response-to(huge) {
+      display: block;
+    }
+
+    @include response-to(medium) {
+      bottom: -163px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 14px;
+      line-height: 17px;
     }
   }
 
@@ -163,6 +211,10 @@ body {
       height: auto;
       width: 600px;
       image-rendering: pixelated;
+
+      @include response-to(huge) {
+        width: 516px;
+      }
 
       @include response-to(medium) {
         width: 406px;
@@ -183,6 +235,13 @@ body {
       background-size: contain;
       background-position: center;
 
+      @include response-to(huge) {
+        width: 92px;
+        height: 24px;
+        top: -15px;
+        left: 163px;
+      }
+
       @include response-to(medium) {
         width: 102px;
         top: -21px;
@@ -198,6 +257,12 @@ body {
     height: auto;
     width: 370px;
     image-rendering: pixelated;
+
+    @include response-to(huge) {
+      width: 323px;
+      left: 177px;
+      top: -27px;
+    }
 
     @include response-to(medium) {
       position: relative;
@@ -221,10 +286,17 @@ body {
     width: 350px;
     z-index: 5;
 
+    @include response-to(huge) {
+      width: 302px;
+      right: 25px;
+      bottom: -40px;
+    }
+
     @include response-to(medium) {
       width: 236px;
       bottom: -143px;
       z-index: 11;
+      right: 5px;
     }
   }
 
@@ -235,9 +307,13 @@ body {
     min-width: 110vw;
     height: auto;
 
+    @include response-to(huge) {
+      height: 192px;
+      width: auto;
+    }
+
     @include response-to(medium) {
       height: 283px;
-      width: auto;
     }
   }
 
@@ -246,6 +322,12 @@ body {
     bottom: -100px;
     left: -60px;
     image-rendering: pixelated;
+
+    @include response-to(huge) {
+      width: 377px;
+      bottom: -80px;
+      left: 35px;
+    }
 
     @include response-to(medium) {
       width: 270px;
@@ -260,9 +342,13 @@ body {
     left: 310px;
     image-rendering: pixelated;
 
+    @include response-to(huge) {
+      width: 321px;
+      height: auto;
+    }
+
     @include response-to(medium) {
       width: 247px;
-      height: auto;
       bottom: -35px;
       left: 185px;
     }
@@ -291,6 +377,53 @@ body {
   background-size: cover;
   padding-top: 85px;
   background-repeat: no-repeat;
+  position: relative;
+  z-index: 100000;
+
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    width: 733px;
+
+    @media(max-width: 1880px) {
+      width: 617px;
+    }
+
+    @media(max-width: 1200px) {
+      content: unset;
+    }
+  }
+
+  &:before {
+    left: -395px;
+    background: linear-gradient(90deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(90deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(90deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%);
+
+    @media(max-width: 1880px) {
+      left: -282px;
+    }
+  }
+
+  &:after {
+    right: -395px;
+    background: linear-gradient(270deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(270deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(270deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%);
+
+    @media(max-width: 1880px) {
+      right: -282px;
+    }
+  }
+
+  section {
+    position: relative;
+    z-index: 2;
+  }
 
   .rules-link {
     display: block;
@@ -304,7 +437,8 @@ body {
     line-height: 27px;
     padding: 3px 21px;
     background-image: url('../img/rules-bg.svg');
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
 
     @include on-event {
@@ -321,6 +455,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    @include response-to(huge) {
+      max-width: 1050px;
+      margin-bottom: 60px;
+    }
 
     @include response-to(medium) {
       flex-direction: column;
@@ -353,7 +492,7 @@ body {
       left: 33.33%;
 
       @include response-to(medium) {
-        top: 291px;
+        top: 250px;
         left: 50%;
       }
     }
@@ -363,7 +502,7 @@ body {
 
       @include response-to(medium) {
         top: unset;
-        bottom: 275px;
+        bottom: 247px;
         right: unset;
         left: 50%;
       }
@@ -396,16 +535,28 @@ body {
       flex-direction: column;
       justify-content: space-between;
 
+      @include response-to(huge) {
+        height: 261px;
+      }
+
       @include response-to(medium) {
         height: auto;
       }
 
       &:first-of-type {
 
-        .process__item_img img {
+        .process__item_img {
 
-          @include response-to(medium) {
-            width: 132px;
+          @include response-to(huge) {
+            margin-top: -20px;
+            margin-bottom: -17px;
+          }
+
+          img {
+
+            @include response-to(huge) {
+              width: 132px;
+            }
           }
         }
       }
@@ -413,22 +564,42 @@ body {
       &:nth-of-type(2) {
         padding-top: 64px;
 
-        @include response-to(medium) {
-          padding: 60px 0 30px;
-          margin: 30px 0;
+        @include response-to(huge) {
+          padding-top: 24px;
 
           .process__item_img {
             margin-bottom: 34px;
+
+            img {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 152px;
+              height: auto;
+            }
           }
+        }
+
+        @include response-to(medium) {
+          margin: 30px 0;
+          padding: 60px 0 30px;
         }
       }
 
       &:last-of-type {
 
-        .process__item_img img {
+        .process__item_img {
 
-          @include response-to(medium) {
-            width: 132px;
+          @include response-to(huge) {
+            margin-top: -20px;
+            margin-bottom: -17px;
+          }
+
+          img {
+
+            @include response-to(huge) {
+              width: 132px;
+            }
           }
         }
       }
