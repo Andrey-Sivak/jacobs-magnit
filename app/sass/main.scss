@@ -176,15 +176,17 @@ body {
 
   &__bonus {
     font-family: 'Myriad Pro', sans-serif;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 17px;
     color: rgba(#fff, .5);
-    display: none;
-    bottom: 105px;
+    bottom: 143px;
     left: 398px;
 
     @include response-to(huge) {
-      display: block;
+      font-size: 12px;
+      line-height: 14px;
+      bottom: 105px;
+      left: 398px;
     }
 
     @include response-to(medium) {
@@ -548,14 +550,14 @@ body {
         .process__item_img {
 
           @include response-to(huge) {
-            margin-top: -20px;
-            margin-bottom: -17px;
+            margin-bottom: 3px;
           }
 
           img {
 
             @include response-to(huge) {
               width: 132px;
+              height: auto;
             }
           }
         }
