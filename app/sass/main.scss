@@ -212,7 +212,7 @@ body {
     &_img {
       height: auto;
       width: 600px;
-      image-rendering: pixelated;
+      //image-rendering: pixelated;
 
       @include response-to(huge) {
         width: 516px;
@@ -258,7 +258,7 @@ body {
     left: 145px;
     height: auto;
     width: 370px;
-    image-rendering: pixelated;
+    //image-rendering: pixelated;
 
     @include response-to(huge) {
       width: 323px;
@@ -282,7 +282,7 @@ body {
   &__card {
     right: 5px;
     bottom: -50px;
-    image-rendering: pixelated;
+    //image-rendering: pixelated;
     display: block;
     height: auto;
     width: 350px;
@@ -323,7 +323,7 @@ body {
     height: auto;
     bottom: -100px;
     left: -60px;
-    image-rendering: pixelated;
+    //image-rendering: pixelated;
 
     @include response-to(huge) {
       width: 377px;
@@ -342,7 +342,7 @@ body {
   &__beans {
     bottom: -65px;
     left: 310px;
-    image-rendering: pixelated;
+    //image-rendering: pixelated;
 
     @include response-to(huge) {
       width: 321px;
