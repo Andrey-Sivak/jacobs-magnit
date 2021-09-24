@@ -40,10 +40,6 @@ body {
     left: 50%;
     transform: translateX(-50%);
 
-    @include response-to(huge) {
-      max-width: 1100px;
-    }
-
     @include response-to(medium) {
       max-width: unset;
       width: fit-content;
@@ -51,10 +47,6 @@ body {
 
     & img {
 
-      @include response-to(huge) {
-        width: 154px;
-        height: auto;
-      }
     }
   }
 }
@@ -64,7 +56,7 @@ body {
   padding-bottom: 108px;
 
   @include response-to(huge) {
-    padding-top: 45px;
+    padding-top: 87px;
   }
 
   @include response-to(medium) {
@@ -148,7 +140,7 @@ body {
       }
 
       @include response-to(huge) {
-        left: -18%;
+        left: -16%;
       }
 
       @include response-to(medium) {
@@ -165,7 +157,8 @@ body {
     z-index: 5;
 
     @include response-to(huge) {
-      max-width: 1042px;
+      max-width: 1079px;
+      padding-right: 92px;
     }
 
     @include response-to(medium) {
@@ -213,10 +206,9 @@ body {
     &_img {
       height: auto;
       width: 600px;
-      //image-rendering: pixelated;
 
       @include response-to(huge) {
-        width: 516px;
+        width: 478px;
       }
 
       @include response-to(medium) {
@@ -239,10 +231,10 @@ body {
       background-position: center;
 
       @include response-to(huge) {
-        width: 92px;
-        height: 24px;
-        top: -15px;
-        left: 163px;
+        width: 119px;
+        height: 32px;
+        top: 252px;
+        left: 2px;
       }
 
       @include response-to(medium) {
@@ -258,12 +250,11 @@ body {
     top: -70px;
     left: 185px;
     height: auto;
-    //image-rendering: pixelated;
 
     @include response-to(huge) {
       width: 323px;
-      left: 177px;
-      top: -27px;
+      left: 224px;
+      top: -69px;
     }
 
     @include response-to(medium) {
@@ -288,8 +279,8 @@ body {
 
     @include response-to(huge) {
       width: 302px;
-      right: 25px;
-      bottom: -40px;
+      right: 93px;
+      bottom: -45px;
     }
 
     @include response-to(medium) {
@@ -321,12 +312,11 @@ body {
     height: auto;
     bottom: -100px;
     left: -60px;
-    //image-rendering: pixelated;
 
     @include response-to(huge) {
       width: 377px;
-      bottom: -80px;
-      left: 35px;
+      bottom: -78px;
+      left: 64px;
     }
 
     @include response-to(medium) {
@@ -340,7 +330,6 @@ body {
   &__beans {
     bottom: -65px;
     left: 310px;
-    //image-rendering: pixelated;
 
     @include response-to(huge) {
       width: 321px;
