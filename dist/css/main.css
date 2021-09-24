@@ -635,9 +635,9 @@ html {
   position: relative; }
 
 .logo-wrap {
-  top: 32px;
+  top: 19px;
   z-index: 1001;
-  max-width: 1200px;
+  max-width: 966px;
   width: 100%;
   text-align: right;
   left: 50%;
@@ -659,8 +659,8 @@ html {
       height: auto; } }
 
 .header {
-  padding-top: 65px;
-  padding-bottom: 104px; }
+  padding-top: 90px;
+  padding-bottom: 108px; }
   @media (max-width: 1450px) {
     .header {
       padding-top: 45px; } }
@@ -692,8 +692,8 @@ html {
         left: -282px; } }
   .header:after {
     right: -395px;
-    background: -webkit-linear-gradient(right, #000000 12.12%, rgba(0, 0, 0, 0) 100%), -webkit-linear-gradient(right, #000000 12.12%, rgba(0, 0, 0, 0) 100%), -webkit-linear-gradient(right, #000000 12.12%, rgba(0, 0, 0, 0) 100%);
-    background: linear-gradient(270deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%); }
+    background: -webkit-linear-gradient(right, #000000 12.12%, rgba(0, 0, 0, 0) 100%), -webkit-linear-gradient(right, #000000 12.12%, rgba(0, 0, 0, 0) 100%), -webkit-linear-gradient(right, #000000 12.12%, rgba(0, 0, 0, 0) 100%), -webkit-linear-gradient(right, #000000 12.12%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(270deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%), linear-gradient(270deg, #000000 12.12%, rgba(0, 0, 0, 0) 100%); }
     @media (max-width: 1880px) {
       .header:after {
         right: -282px; } }
@@ -715,7 +715,7 @@ html {
         display: none; } }
   .header__bg_left {
     top: 0;
-    left: -6%;
+    left: 0;
     z-index: 2; }
     @media (max-width: 1700px) {
       .header__bg_left {
@@ -727,10 +727,10 @@ html {
       .header__bg_left {
         display: none; } }
   .header__container {
-    max-width: 1116px;
+    max-width: 1153px;
     width: 100%;
     margin: 0 auto;
-    padding-right: 104px;
+    padding-right: 35px;
     z-index: 5; }
     @media (max-width: 1450px) {
       .header__container {
@@ -752,7 +752,7 @@ html {
     font-size: 14px;
     line-height: 17px;
     color: rgba(255, 255, 255, 0.5);
-    bottom: 143px;
+    bottom: 123px;
     left: 398px; }
     @media (max-width: 1450px) {
       .header__bonus {
@@ -795,12 +795,12 @@ html {
           image-rendering: unset; } }
     .header__jars:before {
       position: absolute;
-      z-index: 2;
+      z-index: -1;
       content: '';
       width: 116px;
       height: 30px;
-      top: -28px;
-      left: 180px;
+      top: 312px;
+      left: 33px;
       background-image: url("../img/new-tag.png");
       background-repeat: no-repeat;
       background-size: contain;
@@ -818,10 +818,9 @@ html {
           height: 27px;
           left: 113px; } }
   .header__text-img {
-    top: -43px;
-    left: 145px;
-    height: auto;
-    width: 370px; }
+    top: -70px;
+    left: 185px;
+    height: auto; }
     @media (max-width: 1450px) {
       .header__text-img {
         width: 323px;
@@ -839,11 +838,10 @@ html {
         display: block;
         margin-bottom: 55px; } }
   .header__card {
-    right: 5px;
-    bottom: -50px;
+    right: 37px;
+    bottom: -52px;
     display: block;
     height: auto;
-    width: 350px;
     z-index: 5; }
     @media (max-width: 1450px) {
       .header__card {
@@ -860,8 +858,8 @@ html {
     z-index: 3;
     bottom: 0;
     left: 0;
-    min-width: 110vw;
-    height: auto; }
+    min-width: 110%;
+    height: 211px; }
     @media (max-width: 1450px) {
       .header__table {
         height: 192px;
@@ -968,7 +966,7 @@ html {
     .main .rules-link:hover, .main .rules-link:active, .main .rules-link:focus {
       text-decoration: none; }
   .main .process {
-    max-width: 1116px;
+    max-width: 1153px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -987,7 +985,7 @@ html {
             align-items: flex-start; }
     @media (max-width: 1450px) {
       .main .process {
-        max-width: 1050px;
+        max-width: 1079px;
         margin-bottom: 60px; } }
     @media (max-width: 992px) {
       .main .process {
