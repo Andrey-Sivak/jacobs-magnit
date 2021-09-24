@@ -43,10 +43,15 @@ body {
     @include response-to(medium) {
       max-width: unset;
       width: fit-content;
+      top: 494px;
     }
 
     & img {
 
+      @include response-to(medium) {
+        width: 154px;
+        height: auto;
+      }
     }
   }
 }
@@ -62,7 +67,7 @@ body {
   @include response-to(medium) {
     background-image: url('../img/header-bg-left.png');
     background-size: cover;
-    padding-top: 104px;
+    padding-top: 34px;
     padding-bottom: 184px;
   }
 
@@ -239,9 +244,10 @@ body {
 
       @include response-to(medium) {
         width: 102px;
-        top: -21px;
+        top: 81px;
         height: 27px;
-        left: 113px;
+        left: 69px;
+        z-index: 2;
       }
     }
   }
@@ -266,7 +272,7 @@ body {
       margin-left: auto;
       margin-right: auto;
       display: block;
-      margin-bottom: 55px;
+      margin-bottom: 105px;
     }
   }
 

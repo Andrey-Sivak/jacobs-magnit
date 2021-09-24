@@ -649,7 +649,12 @@ html {
       max-width: unset;
       width: -webkit-fit-content;
       width: -moz-fit-content;
-      width: fit-content; } }
+      width: fit-content;
+      top: 494px; } }
+  @media (max-width: 992px) {
+    .logo-wrap img {
+      width: 154px;
+      height: auto; } }
 
 .header {
   padding-top: 90px;
@@ -661,7 +666,7 @@ html {
     .header {
       background-image: url("../img/header-bg-left.png");
       background-size: cover;
-      padding-top: 104px;
+      padding-top: 34px;
       padding-bottom: 184px; } }
   .header:before, .header:after {
     position: absolute;
@@ -808,9 +813,10 @@ html {
       @media (max-width: 992px) {
         .header__jars:before {
           width: 102px;
-          top: -21px;
+          top: 81px;
           height: 27px;
-          left: 113px; } }
+          left: 69px;
+          z-index: 2; } }
   .header__text-img {
     top: -70px;
     left: 185px;
@@ -830,7 +836,7 @@ html {
         margin-left: auto;
         margin-right: auto;
         display: block;
-        margin-bottom: 55px; } }
+        margin-bottom: 105px; } }
   .header__card {
     right: 37px;
     bottom: -52px;
