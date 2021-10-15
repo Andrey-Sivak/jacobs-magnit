@@ -1302,9 +1302,12 @@ html {
         .main .winners .filters .filter .select2-container--default .select2-results__option--highlighted[aria-selected],
         .main .winners .filters .filter .select2-container--default .select2-results__option[aria-selected=true] {
           color: #fff; }
-      .main .winners .filters form.filter:before {
+      .main .winners .filters .filter.f button {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
         position: absolute;
-        z-index: 2;
+        z-index: 10;
         content: '';
         width: 20px;
         height: 19px;
@@ -1313,7 +1316,7 @@ html {
         background-image: url("../img/phone-icon.svg");
         background-position: center;
         background-size: 100%; }
-      .main .winners .filters form.filter .phone-mask {
+      .main .winners .filters .filter.f .phone-mask {
         width: 100%;
         background-color: transparent;
         padding: 19px 10px 18px 51px;
@@ -1324,27 +1327,27 @@ html {
         font-size: 17px;
         line-height: 21px;
         font-family: 'IntroHeadB', sans-serif; }
-        .main .winners .filters form.filter .phone-mask::-webkit-input-placeholder {
+        .main .winners .filters .filter.f .phone-mask::-webkit-input-placeholder {
           color: inherit;
           font-size: inherit;
           line-height: inherit;
           font-family: inherit; }
-        .main .winners .filters form.filter .phone-mask::-moz-placeholder {
+        .main .winners .filters .filter.f .phone-mask::-moz-placeholder {
           color: inherit;
           font-size: inherit;
           line-height: inherit;
           font-family: inherit; }
-        .main .winners .filters form.filter .phone-mask:-ms-input-placeholder {
+        .main .winners .filters .filter.f .phone-mask:-ms-input-placeholder {
           color: inherit;
           font-size: inherit;
           line-height: inherit;
           font-family: inherit; }
-        .main .winners .filters form.filter .phone-mask::-ms-input-placeholder {
+        .main .winners .filters .filter.f .phone-mask::-ms-input-placeholder {
           color: inherit;
           font-size: inherit;
           line-height: inherit;
           font-family: inherit; }
-        .main .winners .filters form.filter .phone-mask::placeholder {
+        .main .winners .filters .filter.f .phone-mask::placeholder {
           color: inherit;
           font-size: inherit;
           line-height: inherit;
@@ -1367,6 +1370,10 @@ html {
           padding-left: 20px;
           padding-top: 0;
           padding-bottom: 0; } }
+      .main .winners__table.empty {
+        background-image: unset; }
+        .main .winners__table.empty .winners__table_body-wrap:before {
+          content: none; }
       .main .winners__table_row {
         display: -webkit-box;
         display: -webkit-flex;
